@@ -89,9 +89,30 @@ function displayString(revstring){
                 </pre>
             </div>
             <div class="col-lg-4">
-                <p>The Code is structured in one function.</p>
-                <h5>Hello World</h5>
-                <p>Hello World is a function that displays an alert with a message of "Hello World"</p>
+                <p>The Code is structured in three functions.</p>
+                <h5>getString</h5>
+                <p>The <span class="boldGold">getString</span> function gets the users input from the page for use in our other functions.
+                    First we get our alert element and ensure that it starts as "invisible" until our app runs and displays the results.
+                    We then declare two Block Scoped variables <span class="var">userString</span> and <span class="var">revString</span>. <span class="var">userString</span> is set to the value the user has input
+                    from our form on the page. <span class="var">revString</span> is set to the value returned from our <span class="boldGold">reverseString</span> function. It also calls the function to run.
+                    Once <span class="boldGold">reverseString</span> returns a value we then call our <span class="boldGold">displayString</span> function with the returned value passed into it.
+                </p>
+                <h5>reverseString</h5>
+                <p>The <span class="boldGold">reverseString</span> function takes the value gathered by <span class="boldGold">getString</span> and reverses it.
+                    First we declare a Block Scoped variable <span class="var">revString</span> and set it to an empty array.
+                    Since strings are also arrays themselves we then run a "for loop" through the string array 
+                    passed to us as <span class="var">userString</span> from our <span class="boldGold">getString</span> function. The loop begins at the LAST value 
+                    in the array are iterates to the FIRST. During each iteration the current value at each index 
+                    is added to our <span class="var">revString</span> array effectively reversing the original string. Finally <span class="var">revString</span> 
+                    is then returned to our <span class="boldGold">getString</span> function to then be passed into the <span class="boldGold">displayString</span> function.
+                </p>
+                <h5>displayString</h5>
+                <p>The <span class="boldGold">displayString</span> function takes our <span class="var">revString</span> from the <span class="boldGold">reverseString</span> function and displays it
+                    on our page through bootstraps alert functionality. First we call on our paragraph tag by its Id "msg"
+                    and using template literal we set our display message along with our <span class="var">revString</span> variable. Finally we remove
+                    the "invisible" class from our alert so that the message is then displayed to the user in reverse from their 
+                    original input.
+                </p>
             </div>
         </div>
     </div>

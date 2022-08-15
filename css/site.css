@@ -5,6 +5,15 @@
     --white-color: #e7e7e7;
 }
 
+.boldGold{
+    font-weight: bold;
+    color: gold;
+}
+
+.var{
+    color: blue;
+}
+
 body {
     color:var(--dark-color);
 }
