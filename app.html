@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Ron Massey</title>
+    <title>Reverse: A Coding Project By Ron Massey</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
     <!----***** Nav Section ***** -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/img/RMMark Color no background.svg" class="d-inline-block align-text-top" width="50" height="30" alt="Ron Massey Mark"> APP NAME</a>
+            <a class="navbar-brand" href="#"><img src="/img/RMMark Color no background.svg" class="d-inline-block align-text-top" width="50" height="30" alt="Ron Massey Mark"> Reverse</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,41 @@
 </nav>
 <!----***** Main Section ***** -->
 <main class="flex-shrink-0">
-    <div class="container"></div>
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col col-lg-4 border-end border-2">
+                <h1>Reverse: A Coding Project</h1>
+                <h4 class="lead">
+                    There and back again. A javascript coding exercise using arrays. Write a program
+                        that displays a string in reverse.
+                </h4>
+                <h2 class="mt-5 border-bottom border-2">Instructions</h2>
+                <p>Enter a word, sentence, or phrase. Press the button and the string will appear in reverse.</p>
+            </div>
+            <div class="col col-lg-8">
+                <div>
+                    <h5>Enter a word, sentence, or phrase</h5>
+                    <form class="row gy-2 gx-3">
+                        <div class="col">
+                            <input id="startString" type="text" class="form-control" placeholder="Can you reverse this?" 
+                            aria-label="String">
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Reverse!</button>
+                        </div>
+                    </form>
+                    <h2 class="mt-5 border-bottom border-2">Results</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm">
+                            <tbody id="results">
+                                <!--Results Go Here-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
  <!----***** Footer Section ***** -->
     <footer class="footer mt-auto py-3 sticky-footer">
