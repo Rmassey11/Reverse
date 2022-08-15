@@ -17,8 +17,8 @@ footer {
     background-color:var(--dark-color);
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: var(--primary-color);
+h1,h2,h3,h5,h6 {
+    color: red;
 }
 
 main>.container {
@@ -32,7 +32,7 @@ footer .social>a{
 }
 footer .social>a:hover{
     opacity: 0.90;
-    color: var(--secondary-color);
+    color: red;
 }
 
 .bsicon{
@@ -52,7 +52,7 @@ footer .social>a:hover{
 }
 
 .checklist >li i{
-    color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 code[class*="language-"],
